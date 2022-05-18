@@ -7,7 +7,61 @@
     <title>Figuras geométricas</title>
 </head>
 <body>
-    <h1>Figuras geometricas</h1>
+    <header>
+        <h1>Figuras geométricas</h1>
+        <p>Calculadora de figuras geométricas</p>
+    </header>
+    <section>
+        <h2>Calcula el área y perímetro de un cuadrado</h2>
+        <form action="">
+            <label for="InputCuadrado">
+                ¿Cuanto mide el lado del cuarado?
+                <input id="InputCuadrado" type="number">
+
+            </label>
+            <button type="button" onclick="calcularPerimetroCuadrado()">
+                Perimetro
+            </button>
+            <button type="button" onclick="calcularAreaCuadrado()">
+                Área
+            </button>
+        </form>
+    </section>
+    <section>
+        <h2>Calcula el área y perimetro de un círculo</h2>
+        <form action="">
+            <label for="InputCirculo">
+                ¿Cuanto mide el radio del círculo?
+                <input id="InputCirculo" type="number">
+            </label>
+            <button type="button" onclick="calcularPerimetroCirculo()">
+                Perimetro
+            </button>
+            <button type="button" onclick="calcularAreaCirculo()">
+                Área
+            </button>
+        </form>
+    </section>
+    <section>
+        <h3>Calculo de área y perímetro de un tríangulo</h3>
+        <form action="">
+            <div>
+                <label for="baseTriangulo">
+                    ¿Cuanto mide la base?
+                    <input id="baseTriangulo" type="number">
+                </label>
+                <label for="alturaTriangulo">
+                    ¿Cuanto mide la altura?
+                    <input id="alturaTriangulo"  type="number">
+                </label>
+                <button type="button" onclick="calcularAreaTriangulo()">
+                    Área
+                </button>
+            </div>
+            
+        </form>
+    </section>
+    
     <script src="./figuras.js"></script>
 </body>
 </html>
